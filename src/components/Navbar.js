@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 // Define component
 export const Navbar = () => {
@@ -24,8 +25,8 @@ export const Navbar = () => {
                     </div>
                     <div className={state.navToggle ? "block sm:block" : "hidden sm:block"}>
                         <ul className="flex flex-col my-4 sm:flex-row sm:my-0 text-lg lg:text-2xl">
-                            <li><a className="hover:text-orange-500 transition-color block px-5 py-3 sm:py-7" href="#about">About</a></li>
-                            <li><a className="hover:text-orange-500 transition-color block px-5 py-3 sm:py-7" href="#work">Work</a></li>
+                            <li><Link to={"/"} className="hover:text-orange-500 transition-color block px-5 py-3 sm:py-7" href="#about">About</Link></li>
+                            <li><Link to={"work"} className="hover:text-orange-500 transition-color block px-5 py-3 sm:py-7" href="#work">Work</Link></li>
                             <li><a className="hover:text-orange-500 transition-color block px-5 py-3 sm:py-7" href="#contact">Contact</a></li>
                         </ul>
                     </div>
