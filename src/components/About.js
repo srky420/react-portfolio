@@ -17,7 +17,7 @@ export const About = () => {
     }
 
     return (
-        <div className="h-screen w-full bg-slate-800 text-white">
+        <div className="w-full text-white">
             <div className="container mx-auto sm:px-5 lg:px-20 2xl:px-40 flex items-center justify-center md:justify-between h-full">
                 <div className="flex flex-col items-center text-center md:items-start gap-y-5 lg:gap-y-10">
                     <h1 className="text-3xl min-[420px]:text-4xl min-[540px]:text-5xl lg:text-6xl xl:text-7xl font-bold lg:text-start">Hey I am Shahrukh</h1>

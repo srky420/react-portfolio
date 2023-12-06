@@ -16,7 +16,7 @@ export const Navbar = () => {
     }
 
     return (
-        <div className="absolute w-full text-white bg-slate-900 sm:bg-transparent">
+        <div className="text-white bg-slate-900 sm:bg-slate-800 h-fit mb-auto">
             <div className="container mx-auto sm:px-5 lg:px-20 2xl:px-40">
                 <div className="flex flex-col justify-between sm:flex-row sm:items-center">
                     <div className="text-2xl p-3 sm:p-0 sm:text-3xl md:text-4xl font-bold">
