@@ -31,3 +31,8 @@
     }
 }
 
+.show {
+    transition: 0.2s opacity linear;
+    opacity: 1 !important;
+}
+
