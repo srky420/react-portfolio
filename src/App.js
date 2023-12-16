@@ -2,12 +2,15 @@ import './App.css';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Outlet } from 'react-router-dom';
+import { About } from './components/About'
+import { Projects } from './components/Projects';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen relative bg-slate-800">
+    <div className="flex flex-col relative">
       <Navbar />
-      <Outlet />
+      <About />
+      <Projects />
       <Footer />
     </div>
   );

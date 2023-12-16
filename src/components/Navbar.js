@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 // Define component
 export const Navbar = () => {
 
+    // Define reference
+    const navbar = useRef(null);
+
     // Define state
     const [state, setState] = useState({
         navToggle: false,
+        navScroll: false
+    })
+
+    // Use Effect hook
+    useEffect(() => {
+        window.addEventListener('scroll', handleNavScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleNavScroll);
+        }
     })
 
     // Handle nav collapse
@@ -17,8 +30,25 @@ export const Navbar = () => {
         }));
     }
 
+    // Handle nav scroll toggle
+    const handleNavScroll = (e) => {
+        const navHeight = navbar.current.getBoundingClientRect().height;
+        if (window.scrollY > navHeight) {
+            setState((state) => ({
+                ...state,
+                navScroll: true
+            }));
+        }
+        else {
+            setState((state) => ({
+                ...state,
+                navScroll: false
+            }));
+        }
+    }
+
     return (
-        <div className="text-white bg-slate-900 sm:bg-slate-800 h-fit">
+        <div className={state.navScroll ? "text-white bg-slate-900 sm:bg-slate-900 fixed w-full border-b-2 border-black z-10" : "text-white bg-slate-900 sm:bg-slate-800 fixed sm:absolute w-full border-b-2 border-black sm:border-0 z-10"} ref={navbar}>
             <div className="container mx-auto sm:px-5 lg:px-20 2xl:px-40">
                 <div className="flex flex-col justify-between sm:flex-row sm:items-center">
                     <div className="text-2xl p-3 sm:p-0 sm:text-3xl md:text-4xl font-bold">
