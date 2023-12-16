@@ -5,7 +5,15 @@ module.exports = {
     './src/App.js'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        orange: '#FE5F00',
+        brown: '#6A5837',
+        light: '#FFF',
+        dark: '#23231A',
+        grey: '#CCC'
+      }
+    },
   },
   plugins: [],
 }
