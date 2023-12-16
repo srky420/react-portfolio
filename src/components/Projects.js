@@ -12,7 +12,7 @@ export const Projects = () => {
                 <div className="grid grid-cols-1 min-[460px]:grid-cols-2 xl:grid-cols-3 px-3 sm:px-0 gap-4 md:gap-5">
                     {projects.map((item, key) => <Project key={key} link={item.link} src={item.src} title={item.title} />)}
                 </div>
-                <button className="py-2 px-4 sm:py-3 text-md lg:text-xl bg-transparent border border-gray-200 hover:bg-dark hover:border-dark transition-colors mx-auto block my-16">Show More</button>
+                <button className="py-2 px-4 sm:py-3 text-md lg:text-xl bg-transparent border border-gray-200 hover:bg-dark hover:border-dark transition-colors mx-auto block my-16 font-poppins">Show More</button>
             </div>
         </div>
     );

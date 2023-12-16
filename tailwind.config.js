@@ -12,6 +12,10 @@ module.exports = {
         light: '#FFF',
         dark: '#23231A',
         grey: '#CCC'
+      },
+      fontFamily: {
+        poppins: 'Poppins, sans-serif',
+        raleway: 'Raleway, sans-serif'
       }
     },
   },
