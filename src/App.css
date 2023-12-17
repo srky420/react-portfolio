@@ -32,6 +32,10 @@
     }
 }
 
+.contact {
+    height: 90vh;
+}
+
 .deco {
     transition: 0.1s all linear;
     opacity: 0;

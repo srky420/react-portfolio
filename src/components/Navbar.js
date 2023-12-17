@@ -48,7 +48,7 @@ export const Navbar = () => {
     }
 
     // Set class names
-    const classNames = state.navScroll ? "text-white bg-dark fixed w-full border-b-2 border-black z-10" : "text-white bg-dark sm:bg-transparent fixed sm:absolute w-full border-b-2 border-black sm:border-0 z-10";
+    const classNames = state.navScroll ? "text-light bg-dark fixed w-full border-b-2 border-black z-10" : "text-light bg-dark sm:bg-transparent fixed sm:absolute w-full border-b-2 border-black sm:border-0 z-10";
 
     return (
         <div className={classNames} ref={navbar}>
@@ -59,9 +59,9 @@ export const Navbar = () => {
                     </div>
                     <div className={state.navToggle ? "h-48 sm:h-fit overflow-y-hidden sm:overflow-y-auto transition-all" : "h-0 overflow-y-hidden sm:h-fit transition-all"}>
                         <ul className="flex flex-col my-4 sm:flex-row sm:my-0 text-lg lg:text-2xl">
-                            <li><Link to={"/"} className="hover:text-orange transition-color block px-5 py-3 sm:py-7" onClick={handleNavCollapse}>About</Link></li>
-                            <li><Link to={"work"} className="hover:text-orange transition-color block px-5 py-3 sm:py-7" onClick={handleNavCollapse}>Work</Link></li>
-                            <li><Link to={"contact"} className="hover:text-orange transition-color block px-5 sm:px-0 sm:ps-3 py-3 sm:py-7" onClick={handleNavCollapse}>Contact</Link></li>
+                            <li><a href="#about" className="hover:text-orange transition-color block px-5 py-3 sm:py-7" onClick={handleNavCollapse}>About</a></li>
+                            <li><a href="#work" className="hover:text-orange transition-color block px-5 py-3 sm:py-7" onClick={handleNavCollapse}>Work</a></li>
+                            <li><a href="#contact" className="hover:text-orange transition-color block px-5 sm:px-0 sm:ps-3 py-3 sm:py-7" onClick={handleNavCollapse}>Contact</a></li>
                         </ul>
                     </div>
                     <button className="block sm:hidden absolute right-5 top-3" onClick={handleNavCollapse}>

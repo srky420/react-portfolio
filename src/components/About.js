@@ -17,7 +17,7 @@ export const About = () => {
     }
 
     return (
-        <div className="text-white show min-h-screen flex flex-col items-center justify-center bg-gradient-to-tr from-dark to-gray-950">
+        <div className="text-light show min-h-screen flex flex-col items-center justify-center bg-gradient-to-tr from-dark to-gray-950" id="about">
             <div className="container mx-auto sm:px-5 lg:px-20 2xl:px-40 flex items-center justify-center md:justify-between h-full">
                 <div className="flex flex-col items-center text-center md:items-start gap-y-5 xl:gap-y-10">
                     <h1 className="text-4xl min-[540px]:text-5xl lg:text-6xl xl:text-7xl font-bold lg:text-start font-raleway">Hey I am Shahrukh</h1>
