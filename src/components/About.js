@@ -22,7 +22,7 @@ export const About = () => {
                 <div className="flex flex-col items-center text-center md:items-start gap-y-5 xl:gap-y-10">
                     <h1 className="text-4xl min-[540px]:text-5xl lg:text-6xl xl:text-7xl font-bold lg:text-start font-raleway">Hey I am Shahrukh</h1>
                     <div className="mx-auto md:mx-0">
-                        <p className="text-lg min-[540px]:text-xl lg:text-2xl mx-auto md:mx-0 typewriter whitespace-nowrap w-0 font-mono text-orange border-r-2 border-orange overflow-hidden" onAnimationIteration={toggleText}>
+                        <p className="text-md min-[540px]:text-xl lg:text-2xl mx-auto md:mx-0 typewriter whitespace-nowrap w-0 font-mono text-orange border-r-2 border-orange overflow-hidden" onAnimationIteration={toggleText}>
                             {state.textToggle ? <>a software engineer</> : <>a web developer</>}
                         </p>
                     </div>
