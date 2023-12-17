@@ -54,7 +54,7 @@ export const Navbar = () => {
         <div className={classNames} ref={navbar}>
             <div className="container mx-auto sm:px-5 lg:px-20 2xl:px-40">
                 <div className="flex flex-col justify-between sm:flex-row sm:items-center font-poppins">
-                    <div className="text-2xl p-3 sm:p-0 sm:text-3xl md:text-4xl font-bold first-letter:text-orange">
+                    <div className="text-2xl p-3 sm:p-0 sm:text-3xl lg:text-4xl font-bold first-letter:text-orange">
                         Folio.
                     </div>
                     <div className={state.navToggle ? "h-48 sm:h-fit overflow-y-hidden sm:overflow-y-auto transition-all" : "h-0 overflow-y-hidden sm:h-fit transition-all"}>
