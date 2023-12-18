@@ -32,6 +32,15 @@
     }
 }
 
+.project-header {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+#show-more:hover .project-btn-deco {
+    transform: translateX(5px);
+}
+
 .contact {
     height: 90vh;
 }
