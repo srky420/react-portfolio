@@ -64,7 +64,7 @@ export const Navbar = () => {
                             <li><a href="#contact" className="hover:text-orange transition-color block px-5 sm:px-0 sm:ps-3 py-3 sm:py-7" onClick={handleNavCollapse}>Contact</a></li>
                         </ul>
                     </div>
-                    <button className="block sm:hidden absolute right-5 top-3" onClick={handleNavCollapse}>
+                    <button className="block sm:hidden absolute right-5 top-3 font-thin" onClick={handleNavCollapse}>
                         {state.navToggle ? <i className="fa fa-2x fa-close"></i> : <i className="fa fa-2x fa-bars"></i>}
                     </button>
                 </div>
