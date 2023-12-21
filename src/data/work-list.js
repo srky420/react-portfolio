@@ -1,4 +1,4 @@
-export const projects = [
+export const work = [
     {
         link: 'https://srky420.pythonanywhere.com/news/',
         src: '../img/news-project.JPG',

@@ -41,6 +41,10 @@
     transform: translateX(5px);
 }
 
+#go-back:hover .project-btn-deco {
+    transform: translateX(-5px);
+}
+
 .contact {
     height: 90vh;
 }
@@ -54,9 +58,17 @@
     opacity: 1;
 }
 
+.project:hover .project-tags {
+    opacity: 1;
+} 
+
 .project:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 10px 0 rgb(25, 25, 25);
+}
+
+.contact-link:hover {
+    transform: translateY(-3px) !important;
 }
 
 @media screen and (max-width: 540px) {
