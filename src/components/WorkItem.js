@@ -10,11 +10,15 @@ export const WorkItem = (props) => {
             <div>
                 <div className="text-base lg:text-md xl:text-xl bg-dark p-3 font-poppins">{props.info.title}</div>
                 <div className="text-grey font-poppins bg-dark px-3 pb-2 text-sm text-justify">{props.info.desc}</div>
-                <div className="grid grid-cols-2">
-                    <button className="py-3 bg-grey text-black hover:bg-orange hover:text-light border-r border-dark text-sm lg:text-base font-poppins">
-                        {props.info.availability === 'youtube' ? <i className="fa fa-youtube-play"></i> : <>Try It</>}
-                    </button>
-                    <button className="py-3 bg-grey text-black hover:bg-orange hover:text-light text-base lg:text-xl"><i className="fa fa-github"></i></button>
+                <div className="grid grid-cols-2 text-center">
+                    {props.info.availability === 'youtube' ?
+                    <a href={props.info.ytLink} className="py-3 bg-grey text-black hover:bg-orange hover:text-light border-r border-dark text-base lg:text-xl font-poppins" target="_blank">
+                        <i className="fa fa-youtube-play"></i>
+                    </a>:
+                    <a href={props.info.link} className="py-3 bg-grey text-black hover:bg-orange hover:text-light border-r border-dark text-sm lg:text-base font-poppins" target="_blank">
+                        Try It
+                    </a>}
+                    <a href={props.info.gitLink} className="py-3 bg-grey text-black hover:bg-orange hover:text-light text-base lg:text-xl" target="_blank"><i className="fa fa-github"></i></a>
                 </div>
             </div>
         </div>

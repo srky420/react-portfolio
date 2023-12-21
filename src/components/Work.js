@@ -19,16 +19,16 @@ export const Work = () => {
             <div className="bg-brown text-light py-5 show min-h-screen" id="work">
                 <div className="container mx-auto px-3 h-full lg:px-20 2xl:px-40 relative">
                     <div className="flex justify-between mb-5">
-                        <Link to="/" className="flex justify-between items-center py-1 sm:py-1 px-6 md:py-2 lg:py-3 text-md lg:text-lg bg-transparent w-36 lg:w-40 border border-gray-200 hover:bg-dark hover:border-dark transition-colors font-poppins" id="go-back">
-                            <span className="project-btn-deco text-2xl transition-transform">&lt;</span>
+                        <Link to="/" className="flex justify-between items-center px-2 lg:px-4 text-sm lg:text-lg bg-transparent w-24 lg:w-32 border border-gray-200 hover:bg-dark hover:border-dark transition-colors font-poppins" id="go-back">
+                            <span className="project-btn-deco text-base lg:text-2xl transition-transform">&lt;</span>
                             <span>Go Back</span> 
                         </Link>
-                        <div className="text-lg lg:text-xl">
-                            <button className={toggle ? "text-light p-3 font-raleway hover-effect inline-block" : "text-light p-3 font-raleway hover-active"} onClick={handleToggle}>Projects</button>
-                            <button className={toggle ? "text-light p-3 font-raleway hover-active" : "text-light p-3 font-raleway hover-effect"} onClick={handleToggle}>Certification</button>
+                        <div className="text-md lg:text-xl text-light font-poppins">
+                            <button className={toggle ? "py-1 lg:py-2 mx-5 hover-effect font-thin" : "py-1 lg:py-2 mx-5 hover-active"} onClick={handleToggle} disabled={!toggle}>Projects</button>
+                            <button className={toggle ? "py-1 lg:py-2 pe-0 hover-active" : "py-1 lg:py-2 hover-effect font-thin"} onClick={handleToggle} disabled={toggle}>Certifications</button>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 xl:gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 xl:gap-5 py-5">
                         {work.map((item, key) => <WorkItem key={key} info={item} />)}
                     </div>
                 </div>
