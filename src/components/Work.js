@@ -1,22 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { work } from "../data/work-list";
-import { Project } from "./Project";
+import { WorkItem } from "./WorkItem";
 import { Link } from "react-router-dom";
 
 // Define component
 export const Work = () => {
+
+    // Define state
+    const [toggle, setToggle] = useState(false);
+
+    // Toggle projects/certifications
+    const handleToggle = () => {
+        setToggle(toggle => !toggle);
+    }
+
     return (
         <div>
-            <div className="bg-brown text-light py-10 show min-h-screen" id="work">
-                <div className="container mx-auto sm:px-5 h-full lg:px-20 2xl:px-40 relative">
-                    <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold mb-10 lg:mb-16 project-header font-raleway">All of my projects and certifications</h1>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 xl:gap-5 px-3 sm:px-0 place-items-center">
-                        {work.map((item, key) => <Project key={key} link={item.link} src={item.src} title={item.title} tags={item.tags} />)}
+            <div className="bg-brown text-light py-5 show min-h-screen" id="work">
+                <div className="container mx-auto px-3 h-full lg:px-20 2xl:px-40 relative">
+                    <div className="flex justify-between mb-5">
+                        <Link to="/" className="flex justify-between items-center py-1 sm:py-1 px-6 md:py-2 lg:py-3 text-md lg:text-lg bg-transparent w-36 lg:w-40 border border-gray-200 hover:bg-dark hover:border-dark transition-colors font-poppins" id="go-back">
+                            <span className="project-btn-deco text-2xl transition-transform">&lt;</span>
+                            <span>Go Back</span> 
+                        </Link>
+                        <div className="text-lg lg:text-xl">
+                            <button className={toggle ? "text-light p-3 font-raleway hover-effect inline-block" : "text-light p-3 font-raleway hover-active"} onClick={handleToggle}>Projects</button>
+                            <button className={toggle ? "text-light p-3 font-raleway hover-active" : "text-light p-3 font-raleway hover-effect"} onClick={handleToggle}>Certification</button>
+                        </div>
                     </div>
-                    <Link to="/" className="flex justify-between items-center py-1 sm:py-2 px-6 lg:py-3 text-md lg:text-lg bg-transparent w-36 lg:w-40 border border-gray-200 hover:bg-dark hover:border-dark transition-colors font-poppins absolute top-0 left-40" id="go-back">
-                        <span className="project-btn-deco text-2xl transition-transform">&lt;</span>
-                        <span>Go Back</span> 
-                    </Link>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 xl:gap-5">
+                        {work.map((item, key) => <WorkItem key={key} info={item} />)}
+                    </div>
                 </div>
             </div>
         </div>

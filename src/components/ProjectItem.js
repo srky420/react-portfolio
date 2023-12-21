@@ -1,7 +1,7 @@
 import React from "react";
 
 // Define component
-export const Project = (props) => {
+export const ProjectItem = (props) => {
     return (
         <a href={props.link} className="transition-transform drop-shadow-sm hover:text-orange border border-gray-900 project min-[400px]:w-96 sm:w-full relative" target="_blank">
             <img src={props.src} alt={props.title} className="object-cover w-full h-60" />

@@ -71,6 +71,37 @@
     transform: translateY(-3px) !important;
 }
 
+.hover-active:after {
+    content: '';
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    height: 2px;
+    background: #fff;
+}
+
+.hover-effect:after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+}
+
+.hover-effect:hover:after {
+    animation: tracker 0.3s forwards;
+}
+
+@keyframes tracker {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 540px) {
     .typewriter {
         letter-spacing: 6px;
