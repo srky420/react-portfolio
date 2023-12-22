@@ -15,12 +15,12 @@ export const Navbar = () => {
 
     // Use Effect hook
     useEffect(() => {
+        window.scrollTo(0, 0);
         window.addEventListener('scroll', handleNavScroll);
-
         return () => {
             window.removeEventListener('scroll', handleNavScroll);
         }
-    })
+    }, [])
 
     // Handle nav collapse
     const handleNavCollapse = (e) => {
@@ -48,7 +48,7 @@ export const Navbar = () => {
     }
 
     // Set class names
-    const classNames = state.navScroll ? "text-light bg-dark fixed w-full border-b-2 border-black z-10" : "text-light bg-dark sm:bg-transparent fixed sm:absolute w-full border-b-2 border-black sm:border-0 z-10";
+    const classNames = state.navScroll ? "text-light bg-dark fixed w-full border-b-2 border-black z-10 transition-all" : "text-light bg-dark sm:bg-transparent fixed sm:absolute w-full border-b-2 border-black sm:border-0 z-10 transition-all";
 
     return (
         <div className={classNames} ref={navbar}>

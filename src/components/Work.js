@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { work } from "../data/work-list";
 import { certs } from "../data/certs-list";
 import { WorkItem } from "./WorkItem";
@@ -10,6 +10,11 @@ export const Work = () => {
 
     // Define state
     const [toggle, setToggle] = useState(false);
+
+    // Define effect
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     // Toggle projects/certifications
     const handleToggle = () => {

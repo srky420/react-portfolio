@@ -12,9 +12,9 @@ export const Projects = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 xl:gap-5 px-3 sm:px-0 place-items-center">
                     {projects.map((item, key) => <ProjectItem info={item} />)}
                 </div>
-                <Link to="/work" className="flex justify-between items-center py-1 sm:py-2 px-4 lg:py-3 text-md lg:text-lg bg-transparent w-36 lg:w-40 border border-gray-200 hover:bg-dark hover:border-dark transition-colors mx-auto my-16 font-poppins" id="show-more">
-                    <span>Show More</span> 
-                    <span className="project-btn-deco text-2xl transition-transform">&gt;</span>
+                <Link to="/work" className="flex justify-between items-center py-1 sm:py-2 px-5 lg:py-3 text-md lg:text-lg bg-transparent w-32 lg:w-36 border border-gray-200 hover:bg-dark hover:border-dark transition-colors mx-auto my-16 font-poppins" id="show-more">
+                    <span>Show All</span> 
+                    <span className="project-btn-deco text-xl lg:text-2xl transition-transform">&gt;</span>
                 </Link>
             </div>
         </div>

@@ -94,6 +94,11 @@
     width: 100%;
 }
 
+.cert:hover .hover-overlay {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 540px) {
     .typewriter {
         letter-spacing: 6px;

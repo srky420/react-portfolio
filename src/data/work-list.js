@@ -3,7 +3,7 @@ export const work = [
         link: 'https://srky420.pythonanywhere.com/news/',
         gitLink: 'https://github.com/srky420/capstone-django',
         src: '../img/news-project.JPG',
-        title: 'New App',
+        title: 'News App',
         desc: 'A news aggreator using Django and JavaScript. Utilizes external API (NewsAPI) to fetch news data and displays it in appropriate format. Has user authentication with email verification and dynamic tabs using JavaScript.',
         tags: 'Django, JS',
         availability: 'deployed'
