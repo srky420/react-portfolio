@@ -24,8 +24,8 @@ export const Navbar = () => {
 
     // Handle nav collapse
     const handleNavCollapse = (e) => {
-        console.log(e.target.href)
         setState((state) => ({
+            ...state,
             navToggle: e.target.href ? false : !state.navToggle,
         }));
     }
@@ -57,7 +57,7 @@ export const Navbar = () => {
                     <div className="text-2xl p-3 sm:p-0 sm:text-3xl lg:text-4xl font-bold first-letter:text-orange">
                         Folio.
                     </div>
-                    <div className={state.navToggle ? "h-48 sm:h-fit overflow-y-hidden sm:overflow-y-auto transition-all" : "h-0 overflow-y-hidden sm:h-fit transition-all"}>
+                    <div className={state.navToggle ? "h-48 sm:h-fit overflow-y-hidden transition-all" : "h-0 overflow-y-hidden sm:h-fit transition-all"}>
                         <ul className="flex flex-col my-4 sm:flex-row sm:my-0 text-lg lg:text-2xl">
                             <li><a href="#about" className="hover:text-orange transition-color block px-5 py-3 sm:py-7" onClick={handleNavCollapse}>About</a></li>
                             <li><a href="#work" className="hover:text-orange transition-color block px-5 py-3 sm:py-7" onClick={handleNavCollapse}>Work</a></li>
