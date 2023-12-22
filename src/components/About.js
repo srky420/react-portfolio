@@ -27,8 +27,8 @@ export const About = () => {
                         </p>
                     </div>
                     <div className="flex gap-4 my-3 mx-auto md:mx-0">
-                        <button className="py-2 px-4 md:py-3 text-sm lg:text-lg bg-transparent border border-gray-200 hover:bg-brown hover:border-brown transition-colors font-poppins">See Projects</button>
-                        <button className="py-2 px-4 md:py-3 text-sm lg:text-lg bg-transparent border border-gray-200 hover:bg-brown hover:border-brown transition-colors font-poppins">Contact Me</button>
+                        <a href="#work" className="py-2 px-4 md:py-3 text-sm lg:text-lg bg-transparent border border-gray-200 hover:bg-brown hover:border-brown transition-colors font-poppins">See Projects</a>
+                        <a href="#contact" className="py-2 px-4 md:py-3 text-sm lg:text-lg bg-transparent border border-gray-200 hover:bg-brown hover:border-brown transition-colors font-poppins">Contact Me</a>
                     </div>
                 </div>
                 <img className="rounded-full ring-2 ring-slate-600 hidden md:block object-cover p-2 md:h-60 md:w-60 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96" 

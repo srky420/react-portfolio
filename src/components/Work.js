@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { work } from "../data/work-list";
+import { certs } from "../data/certs-list";
 import { WorkItem } from "./WorkItem";
+import { CertItem } from "./CertItem";
 import { Link } from "react-router-dom";
 
 // Define component
@@ -28,9 +30,14 @@ export const Work = () => {
                             <button className={toggle ? "py-1 lg:py-2 pe-0 hover-active" : "py-1 lg:py-2 hover-effect font-thin"} onClick={handleToggle} disabled={toggle}>Certifications</button>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 xl:gap-5 py-5">
-                        {work.map((item, key) => <WorkItem key={key} info={item} />)}
+                    {toggle ? 
+                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-5 place-items-center py-5">
+                        {certs.map((item, key) => <CertItem key={key} info={item} />)}
                     </div>
+                    : 
+                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-5 place-items-center py-5">
+                        {work.map((item, key) => <WorkItem key={key} info={item} />)}
+                    </div>}
                 </div>
             </div>
         </div>

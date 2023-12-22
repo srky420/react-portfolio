@@ -3,7 +3,7 @@ import React from "react";
 // Define component
 export const WorkItem = (props) => {
     return (
-        <div className="shadow-sm border border-gray-900 sm:w-full relative flex flex-col justify-between">
+        <div className="shadow-sm border border-gray-900 max-w-sm sm:max-w-full relative flex flex-col justify-between h-full">
             <div className="h-full">
                 <img src={props.info.src} alt={props.info.title} className="h-full object-cover" />
             </div>
