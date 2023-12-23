@@ -12,13 +12,13 @@ export const WorkItem = (props) => {
                 <div className="text-grey font-poppins bg-dark px-3 pb-2 text-sm text-justify">{props.info.desc}</div>
                 <div className="grid grid-cols-2 text-center">
                     {props.info.availability === 'youtube' ?
-                    <a href={props.info.ytLink} className="py-3 bg-grey text-black hover:bg-orange hover:text-light border-r border-dark text-base lg:text-xl font-poppins" target="_blank">
+                    <a href={props.info.ytLink} className="py-3 bg-grey text-black hover:bg-orange hover:text-light border-r border-dark text-base lg:text-xl font-poppins" target="_blank" rel="noreferrer">
                         <i className="fa fa-youtube-play"></i>
                     </a>:
-                    <a href={props.info.link} className="py-3 bg-grey text-black hover:bg-orange hover:text-light border-r border-dark text-sm lg:text-base font-poppins" target="_blank">
+                    <a href={props.info.link} className="py-3 bg-grey text-black hover:bg-orange hover:text-light border-r border-dark text-sm lg:text-base font-poppins" target="_blank" rel="noreferrer">
                         Try It
                     </a>}
-                    <a href={props.info.gitLink} className="py-3 bg-grey text-black hover:bg-orange hover:text-light text-base lg:text-xl" target="_blank"><i className="fa fa-github"></i></a>
+                    <a href={props.info.gitLink} className="py-3 bg-grey text-black hover:bg-orange hover:text-light text-base lg:text-xl" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a>
                 </div>
             </div>
         </div>

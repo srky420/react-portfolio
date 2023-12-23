@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 
 // Define component
 export const About = () => {
@@ -31,7 +31,7 @@ export const About = () => {
                         <a href="#contact" className="py-2 px-4 md:py-3 text-sm lg:text-lg bg-transparent border border-gray-200 hover:bg-brown hover:border-brown transition-colors font-poppins">Contact Me</a>
                     </div>
                 </div>
-                <img className="rounded-full ring-2 ring-slate-600 hidden md:block object-cover p-2 md:h-60 md:w-60 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96" 
+                <img className="rounded-full ring-2 ring-slate-600 hidden md:block object-cover p-2 md:h-60 md:w-60 lg:h-72 lg:w-72 xl:h-96 xl:w-96" 
                     src="../img/profile.png" alt="profile" />
             </div>
         </div>

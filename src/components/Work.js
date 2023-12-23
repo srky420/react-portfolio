@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { work } from "../data/work-list";
 import { certs } from "../data/certs-list";
 import { WorkItem } from "./WorkItem";
