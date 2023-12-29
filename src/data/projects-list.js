@@ -2,8 +2,14 @@ export const projects = [
     {
         link: 'https://srky420.pythonanywhere.com/news/',
         src: '../img/news-project.JPG',
-        title: 'New App',
+        title: 'News App',
         tags: 'Django, JS'
+    },
+    {
+        link: 'https://search-weather-app-react-redux.netlify.app/',
+        src: '../img/weather-app-project.JPG',
+        title: 'Weather App',
+        tags: 'React, Redux, TailwindCSS'
     },
     {
         link: 'https://github.com/srky420/cs50-fp-bootstrap.git',
@@ -15,12 +21,6 @@ export const projects = [
         link: 'https://github.com/srky420/cs50w-project4',
         src: '../img/socialmedia-project.JPG',
         title: 'Social Media App',
-        tags: 'Django'
-    },
-    {
-        link: 'https://github.com/srky420/cs50w-project2',
-        src: '../img/commerce-project.JPG',
-        title: 'Auctions App',
         tags: 'Django'
     },
     {

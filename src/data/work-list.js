@@ -9,6 +9,15 @@ export const work = [
         availability: 'deployed'
     },
     {
+        link: 'https://search-weather-app-react-redux.netlify.app/',
+        gitLink: 'https://github.com/srky420/weather-app-react-redux',
+        src: '../img/weather-app-project.JPG',
+        title: 'Weather App',
+        desc: 'A weather app created using React, Redux and TailwindCSS. Consumes OpenWeatherMap to fetch locations, weather and forecast data. Uses Netlify serverless functions to securely access API key and fetch data',
+        tags: 'React, Redux, TailwindCSS',
+        availability: 'deployed'
+    },
+    {
         link: '',
         gitLink: 'https://github.com/srky420/cs50-fp-bootstrap.git',
         ytLink: 'https://www.youtube.com/watch?v=JR2JwcJdGro&t=127s',
