@@ -9,12 +9,12 @@ export const work = [
         availability: 'deployed'
     },
     {
-        link: 'https://search-weather-app-react-redux.netlify.app/',
-        gitLink: 'https://github.com/srky420/weather-app-react-redux',
-        src: '../img/weather-app-project.JPG',
-        title: 'Weather App',
-        desc: 'A weather app created using React, Redux and TailwindCSS. Consumes OpenWeatherMap to fetch locations, weather and forecast data. Uses Netlify serverless functions to securely access API key and fetch data',
-        tags: 'React, Redux, TailwindCSS',
+        link: 'https://bites-restuarant.netlify.app/',
+        gitLink: 'https://github.com/srky420/restuarant-website-vanilla',
+        src: '../img/bites-restuarant-project.JPG',
+        title: 'BITES Restuarant Website',
+        desc: 'A Restuarant business website as one of my personal projects created using HTML, CSS, JS, SASS and jQuery. It utilizes MealDB API to fetch menu items. This business is focused on creating online customer base through promotion of its diverse menu and promotion of its mobile application.',
+        tags: 'Django, JS',
         availability: 'deployed'
     },
     {
@@ -46,6 +46,15 @@ export const work = [
         desc: 'A auctions app using Django. Has user authentication, create listing, close listing, watchlist listing, bid on listing, comment on listing and declaring listing winner features. Creates appropriate relational database tables using SQLite3 and Django ORM.',
         tags: 'Django',
         availability: 'youtube'
+    },
+    {
+        link: 'https://search-weather-app-react-redux.netlify.app/',
+        gitLink: 'https://github.com/srky420/weather-app-react-redux',
+        src: '../img/weather-app-project.JPG',
+        title: 'Weather App',
+        desc: 'A weather app created using React, Redux and TailwindCSS. Consumes OpenWeatherMap to fetch locations, weather and forecast data. Uses Netlify serverless functions to securely access API key and fetch data',
+        tags: 'React, Redux, TailwindCSS',
+        availability: 'deployed'
     },
     {
         link: 'https://fcc-random-quote-machine-srky.netlify.app/',
