@@ -21,7 +21,7 @@ export const projects = [
         link: 'https://github.com/srky420/cs50w-project4',
         src: '../img/socialmedia-project.JPG',
         title: 'Social Media App',
-        tags: 'Django, Bootstrap'
+        tags: 'Django, JS, Bootstrap'
     },
     {
         link: 'https://search-weather-app-react-redux.netlify.app/',
