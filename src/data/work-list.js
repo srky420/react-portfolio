@@ -9,6 +9,15 @@ export const work = [
         availability: 'deployed'
     },
     {
+        link: 'https://myshop-ecommerce-site.netlify.app/',
+        gitLink: 'https://github.com/srky420/e-commerce-react-tailwind',
+        src: '../img/ecommerce-project.JPG',
+        title: 'MYSHOP E-commerce App',
+        desc: 'This is an e-commerce web app for a made-up retailer store. The store sells a bunch of products which are categorized. Users can browse products, sort them, add to cart and delete them from cart. The products data is fetched from an external REST API. Adding products to cart works in real-time. Users can also increase/decrease quantities from cart page and see their total being calculated in real-time.',
+        tags: 'React, ReactRouter, TailwindCSS',
+        availability: 'deployed'
+    },
+    {
         link: 'https://bites-restuarant.netlify.app/',
         gitLink: 'https://github.com/srky420/restuarant-website-vanilla',
         src: '../img/bites-restuarant-project.JPG',
