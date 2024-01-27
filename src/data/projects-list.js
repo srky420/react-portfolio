@@ -6,6 +6,12 @@ export const projects = [
         tags: 'Django, JS, Bootstrap'
     },
     {
+        link: 'https://myshop-ecommerce-site.netlify.app/',
+        src: '../img/ecommerce-project.JPG',
+        title: 'MYSHOP E-commerce App',
+        tags: 'React, ReactRouter, TailwindCSS',
+    },
+    {
         link: 'https://bites-restuarant.netlify.app/',
         src: '../img/bites-restuarant-project.JPG',
         title: 'BITES Restuarant Website',
