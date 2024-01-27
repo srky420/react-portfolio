@@ -35,10 +35,4 @@ export const projects = [
         title: 'Weather Search App',
         tags: 'React, Redux, OpenWeatherAPI'
     },
-    {
-        link: 'https://fcc-markdown-previewer-srky.netlify.app/',
-        src: './img/markdown-previewer-project.JPG',
-        title: 'Markdown Previewer',
-        tags: 'React, Marked'
-    }
 ]
