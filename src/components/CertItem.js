@@ -12,7 +12,7 @@ export const CertItem = (props) => {
             </div>
             <div className="text-center">
                 <div className="text-base lg:text-md xl:text-xl bg-dark p-3 font-poppins">{props.info.title}</div>
-                <div className="text-grey font-poppins bg-dark px-3 pb-2 text-sm text-justify">{props.info.desc}</div>
+                <div className="text-grey font-poppins bg-dark px-3 pb-2 text-sm">{props.info.desc}</div>
             </div>
         </a>
     )
