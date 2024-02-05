@@ -1,14 +1,5 @@
 export const work = [
     {
-        link: 'https://srky420.pythonanywhere.com/news/',
-        gitLink: 'https://github.com/srky420/capstone-django',
-        src: '../img/news-project.JPG',
-        title: 'News App',
-        desc: 'A news aggreator using Django and JavaScript. Utilizes external API (NewsAPI) to fetch news data and displays it in appropriate format. Has user authentication with email verification and dynamic tabs using JavaScript.',
-        tags: 'Django, JS',
-        availability: 'deployed'
-    },
-    {
         link: 'https://myshop-ecommerce-site.netlify.app/',
         gitLink: 'https://github.com/srky420/e-commerce-react-tailwind',
         src: '../img/ecommerce-project.JPG',
@@ -18,11 +9,29 @@ export const work = [
         availability: 'deployed'
     },
     {
+        link: 'https://fitt-fitness-app.netlify.app/',
+        gitLink: 'https://github.com/srky420/fitness-app-react-tailwind',
+        src: '../img/fitness-project.JPG',
+        title: 'FITT Gym Web App',
+        desc: 'FITT: A Fitness/Gym website that portrays the services, trainers and programs this gym offers. Users can navigate the website to find offered programs, gym trainers and monthly pricing packages offered by the gym. Users can also find detailed view of each program and trainer. The website also shows client testimonials as evidence of their high-quality services. The website is fully responsive for desktop, laptop, tablet and mobile devices.',
+        tags: 'React, ReactRouter, TailwindCSS',
+        availability: 'deployed'
+    },
+    {
         link: 'https://bites-restuarant.netlify.app/',
         gitLink: 'https://github.com/srky420/restuarant-website-vanilla',
         src: '../img/bites-restuarant-project.JPG',
         title: 'BITES Restuarant Website',
         desc: 'A Restuarant business website as one of my personal projects created using HTML, CSS, JS, SASS and jQuery. It utilizes MealDB API to fetch menu items. This business is focused on creating online customer base through promotion of its diverse menu and promotion of its mobile application.',
+        tags: 'Django, JS',
+        availability: 'deployed'
+    },
+    {
+        link: 'https://srky420.pythonanywhere.com/news/',
+        gitLink: 'https://github.com/srky420/capstone-django',
+        src: '../img/news-project.JPG',
+        title: 'News App',
+        desc: 'A news aggreator using Django and JavaScript. Utilizes external API (NewsAPI) to fetch news data and displays it in appropriate format. Has user authentication with email verification and dynamic tabs using JavaScript.',
         tags: 'Django, JS',
         availability: 'deployed'
     },
