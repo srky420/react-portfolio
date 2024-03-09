@@ -1,4 +1,4 @@
-# MYSHOP E-commerce Web App
+# Personal Portfolio
 
 A Personal Portfolio web app created using React, React Router and TailwindCSS.
 
