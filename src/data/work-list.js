@@ -109,14 +109,5 @@ export const work = [
         desc: 'A Google Search clone using vanilla HTML, SASS and JavaScript.',
         tags: 'HTML, CSS, JS',
         availability: 'deployed'
-    },
-    {
-        link: 'https://netflix-clone-vanilla.netlify.app/',
-        gitLink: 'https://github.com/srky420/netflix-clone-vanilla',
-        src: './img/netflix-project.JPG',
-        title: 'Netflix Clone',
-        desc: 'A Netflix clone using vanilla HTML, CSS and JavaScript',
-        tags: 'HTML, CSS, JS',
-        availability: 'depoyed'
     }
 ]
